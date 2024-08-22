@@ -1,2 +1,2 @@
 # preventing_double_spending_attack
-In this project, to overcome the issues in the existing transaction system, network observers are used that can track 
+In this project, to overcome the issues in the existing transaction system, network observers are used that can track anomalous transactions performed without authorization. Additionally, to notify the sender and receiver about the unauthorized transaction, a peer alert system is designed such that the message is passed from the fraudulent node to the sender and receiver nodes. We used a hybrid consensus mechanism that combines proof-of-work and proof-of-stake protocols to avoid double spending attacks.
