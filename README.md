@@ -5,15 +5,15 @@ It combines Proof-of-Work (PoW) and Proof-of-Stake (PoS) inspired concepts with 
 
 # Features
 
-Custom blockchain implementation supporting:
-  Proof-of-Work mining: finding a valid hash to add a block
+Custom blockchain implementation supporting:  
+  Proof-of-Work mining: finding a valid hash to add a block  
   Proof-of-Stake-inspired logic: balances and pending transactions help determine block acceptance and validity
   
 Digital signatures with Elliptic Curve Cryptography (ECC)
 
-Automated detection & mitigation of double-spending attacks:
-  Observes pending transactions
-  Detects if total spending exceeds balance
+Automated detection & mitigation of double-spending attacks:  
+  Observes pending transactions  
+  Detects if total spending exceeds balance  
   Removes offending transactions and updates the blockchain
 
 Dynamic key and wallet generation
@@ -24,13 +24,13 @@ Clear console logs tracing mining, balances and attack prevention
 
 1. Transactions are signed using private keys to ensure authenticity.
 2. Mining uses Proof-of-Work: miners solve computational puzzles to add blocks.
-3. Balances and pending transactions simulate Proof-of-Stake influence:
-     Large senders can be flagged if total outgoing payments exceed their balance.
+3. Balances and pending transactions simulate Proof-of-Stake influence:  
+    Large senders can be flagged if total outgoing payments exceed their balance.
 4. NetworkObserver continuously watches the transaction pool.
 5. On detecting suspicious behavior, PeerAlert:
-     Removes malicious transactions
-     Logs an alert
-     Updates blockchain consistency
+    Removes malicious transactions  
+    Logs an alert  
+    Updates blockchain consistency
 
 # Technologies Used
 
@@ -43,7 +43,7 @@ elliptic – ECC for signing & verification (Secp256k1 curve)
 # Getting Started
 
 Clone the repository  
-  <git clone https://github.com/saumya-singh-14/BlockShield.git  
+  git clone https://github.com/saumya-singh-14/BlockShield.git  
   cd BlockShield
 
 Install dependencies  
@@ -54,6 +54,6 @@ Run the project
 
 # Generate a New Wallet
   
-  Create a new wallet key pair anytime:  
-    node keygenerator.js  
-  This will print a private and public key pair to use for transactions.
+Create a new wallet key pair anytime:  
+  node keygenerator.js  
+This will print a private and public key pair to use for transactions.
