@@ -42,18 +42,18 @@ elliptic – ECC for signing & verification (Secp256k1 curve)
 
 # Getting Started
 
-Clone the repository
-  git clone https://github.com/saumya-singh-14/BlockShield.git
+Clone the repository  
+  <git clone https://github.com/saumya-singh-14/BlockShield.git  
   cd BlockShield
 
-Install dependencies
+Install dependencies  
   npm install crypto-js elliptic
 
-Run the project
+Run the project  
   node main.js
 
 # Generate a New Wallet
   
-  Create a new wallet key pair anytime:
-    node keygenerator.js
+  Create a new wallet key pair anytime:  
+    node keygenerator.js  
   This will print a private and public key pair to use for transactions.
